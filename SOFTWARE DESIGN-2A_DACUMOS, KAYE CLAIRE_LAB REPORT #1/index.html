@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a portfolio for photography">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="source/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Cover</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron jumbs shadow bg-dark rounded">
+        <div class="row">
+            <div class="col-md-5">
+                <img class="logo-photo" src="assets/images/photo3.webp" alt="logo">
+            </div>
+            <span class="border-left"></span>
+            <div class="col-md-6">
+              <br><br>
+              <h1 id="word"></h1>
+              <h1 id="words"></h1>
+              <h1 id="wordone"></h1>
+              <a href="About.html" class="btn btn-outline-success btn-lg bout">About</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="source/jquery-3.6.0/cdn-jquery.js"></script>
+<script src="source/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    count = 0;
+    wordsArray = ["CAPTURE"," ", "STORE"," ","MAKE", " "];
+    setInterval(function () {
+      count++;
+      $("#word").fadeOut(400, function () {
+        $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+      });
+    }, 3000);
+  });
+
+  $(function () {
+    count1 = 0;
+    wordsArray1 = ["MOMENT"," ", "EVENT"," ","STORY", " "];
+    setInterval(function () {
+      count1++;
+      $("#wordone").fadeOut(400, function () {
+        $(this).text(wordsArray1[count1 % wordsArray1.length]).fadeIn(400);
+      });
+    }, 3000);
+  });
+
+  $(function () {
+    count2 = 0;
+    wordsArray2 = ["YOUR","PHOTOGRAPHY","YOUR","DOCUMENTING","YOUR","IMAGING"];
+    setInterval(function () {
+      count2++;
+      $("#words").fadeOut(400, function () {
+        $(this).text(wordsArray2[count2 % wordsArray2.length]).fadeIn(400);
+      });
+    }, 3000);
+  });
+</script>
+</html>

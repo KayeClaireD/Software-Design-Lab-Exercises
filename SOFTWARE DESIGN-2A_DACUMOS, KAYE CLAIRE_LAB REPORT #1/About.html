@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a portfolio for photography">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="source/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="source/bootstrap-4.3.1/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about-style.css">
+    <title>About</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between fixed-top">
+        <a class="navbar-brand glitch" href="#">Kaye's Portfolio</a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="index.html"><b class="navtag">Home</b><span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="portfolio.html"><b class="navtag">Portfolio</b></a>
+            <a class="nav-item nav-link" href="About.html"><b class="navtag">About</b></a>
+            <a class="nav-item nav-link" data-toggle="modal" data-target="#servicesModal" href="#"><b class="navtag">Services</b></a>
+            <a class="nav-item nav-link" data-toggle="modal" data-target="#contactModal" href="#"><b class="navtag">Contact</b></a>
+          </div>
+        </div>
+      </nav><br>
+    <div class="container-fluid">
+        <div class="jumbotron jumbs shadow bg-dark rounded">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="user-photo" src="assets/images/photo1.webp" alt="user">
+                </div>
+                <span class="border-left"></span>
+                <div class="col-md-6">
+                    <h4 class="job">Freelance Photographer</h4>
+                    <h3 id="text-info">Hello I'm <strong class="name">Kaye Claire</strong></h3><br>
+                    <article id="text-intro"></article><br>
+                  <button type="button" class="btn btn-outline-warning btn-lg" data-toggle="modal" data-target="#contactModal" id="btn-contact">Contact info <span class="fa fa-arrow-circle-right"></span></button>
+                  <a href="resume.html" class="btn btn-outline-warning btn-lg">View Resume</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header rounded-top bg-dark">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4><b>If you have inquiries reach me into my: </b></h4>
+            <hr>
+            <h4><a href="tel:+639055201406" class="btn btn-success"><span class="fa fa-phone-square"></span></a> : 09055201406 </h4>
+            <h4><a href="notfound.html" target="_blank" class="btn btn-info"><span class="fa fa-facebook-official"></span></a> : Kaye Claire O. Dacumos</h4>
+            <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=kayeclairedacumos707@gmail.com" target="_blank" class="btn btn-warning"><span class="fa fa-envelope"></span></a> : kayeclairedacumos707@gmail.com</h4>
+            <h4><a href="https://www.instagram.com/kclrdcms/" target="_blank" class="btn btn-secondary"><span class="fa fa-instagram"></span></a> : kclrdcms</h4>
+            <hr>
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="recipient-email" placeholder="email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" placeholder="Message..."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-secondary">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="servicesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header rounded-top bg-dark">
+            <h5 class="modal-title" id="exampleModalLabel">Services and Schedules</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <h4><b>Services</b></h4>
+                <ul>
+                  <li>Documentary Photography</li>
+                  <li>Portrait Photography</li>
+                  <li>Landscape Photography</li>
+                  <li>Street Photography</li>
+                  <li>Editing</li>
+                  <li>Events Photography</li>
+                  <li>Product Photography</li>
+                  <li>Food Photography</li>
+                  <li>Infographic design</li>
+                  <li>Software Project Management</li>
+                </ul>
+              </div>
+              <span class="border-left"></span>
+              <div class="col-md-5">
+                <h4><b>Schedule</b></h4>
+                <ul>
+                  <li>Monday: 8:00 AM - 5:00 PM</li>
+                  <li>Tuesday: 8:00 AM - 5:00 PM</li>
+                  <li>Wednesday: 8:00 AM - 5:00 PM</li>
+                  <li>Thursday: 8:00 AM - 5:00 PM</li>
+                  <li>Friday: 8:00 AM - 5:00 PM</li>
+                  <li>Saturday: 8:30 AM - 4:00 PM</li>
+                  <li>Sunday: Closed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="source/jquery-3.6.0/cdn-jquery.js"></script>
+<script src="source/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let letter = 0;
+  const text = "A competent computer engineering student that offer unique combination of experience and education that includes computer programming, digital photography skills, and has the complex strategies to take leadership and responsibilities. I'm a minimalist who enjoys taking random pictures of different scenery and even beautiful people with my fancy camera and my other devices. I 'm an adventurer as well, which is why nature fascinates me so much. Learning and surviving are the two most important aspects of my life. Family is my reason to live, dreams are my reason to fight, and self-confidence combined with perseverance determines my future";
+  function typeText() {
+    if (letter < text.length) {
+      document.getElementById("text-intro").innerHTML += text.charAt(letter);
+      letter++;
+      let speed = 40
+      setTimeout(typeText, speed);
+    }
+  }
+  typeText();
+});
+</script>
+</html>
